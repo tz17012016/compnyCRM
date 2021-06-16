@@ -1,0 +1,11 @@
+<ul class="nav flex-column side_nav pt-4 bg-info">
+  <li *ngFor="let navItem of navItems">
+    <a
+      [routerLink]="navItem.link"
+      routerLinkActive="active"
+      class="nav-link text-white"
+    >
+      <span class="ml-3">{{ navItem.title | titlecase }}</span>
+    </a>
+  </li>
+</ul>
