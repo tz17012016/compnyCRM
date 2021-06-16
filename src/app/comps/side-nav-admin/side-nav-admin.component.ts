@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 interface NavItem {
   title: string;
+  icon: string;
   link: string;
 }
 
@@ -14,27 +15,19 @@ export class SideNavAdminComponent implements OnInit {
   navItems: NavItem[] = [
     {
       title: 'customers',
+      icon: 'fa fa-users',
       link: '/admin',
     },
     {
       title: 'contacts',
+      icon: 'fa fa-address-book',
       link: '/admin/contacts',
     },
-    {
-      title: 'leads',
-      link: '/admin/customers',
-    },
+
     {
       title: 'reports',
-      link: '/admin/customers',
-    },
-    {
-      title: 'integrations',
-      link: 'integrations',
-    },
-    {
-      title: 'year-end sale',
-      link: 'year-end-sale',
+      icon: 'fa fa-flag',
+      link: 'reports',
     },
   ];
 

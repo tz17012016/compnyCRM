@@ -5,7 +5,8 @@
       routerLinkActive="active"
       class="nav-link text-white"
     >
-      <span class="ml-3">{{ navItem.title | titlecase }}</span>
+      <i [ngClass]="navItem.icon"></i>
+      <span class="margin_icon">{{ navItem.title | titlecase }}</span>
     </a>
   </li>
 </ul>

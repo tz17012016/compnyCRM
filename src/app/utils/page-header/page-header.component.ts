@@ -6,11 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
     <div class="container">
       <div class="row mt-5">
         <div class="col-12">
-          <div class="py-2 px-3 my-4" [style]="{ background: '#DDD' }">
+          <div class="py-2 px-3 my-4 rounded" [style]="{ background: '#DDD' }">
             <h3>
+              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
               {{ title | titlecase }}
             </h3>
-            <p class="lead">
+            <p class="lead ">
               {{ description | paragraphCapital }}
             </p>
           </div>
