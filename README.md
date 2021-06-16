@@ -27,6 +27,9 @@ password:123456
 
 # Usage
 
+## first in the environment.ts you hav to supply your own firebase authentication!!
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
 ## Development server
