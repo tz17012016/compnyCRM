@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'compnyCard';
+  title = 'compnyCRMCard';
 }
-
-// app.component.spec.ts אפשר למחוק

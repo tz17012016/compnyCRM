@@ -15,19 +15,15 @@ export class ContactListComponent implements OnInit {
   }
 
   searchByName(ev: any): void {
-    console.log(ev.target.value);
     this.dbFb.filterArrayUsersBy(ev.target.value, 'name');
   }
   searchByEmail(ev: any): void {
-    console.log(ev.target.value);
     this.dbFb.filterArrayUsersBy(ev.target.value, 'email');
   }
   searchByCity(ev: any): void {
-    console.log(ev.target.value);
     this.dbFb.filterArrayUsersBy(ev.target.value, 'city');
   }
   searchByPhone(ev: any): void {
-    console.log(ev.target.value);
     this.dbFb.filterArrayUsersBy(ev.target.value, 'phone');
   }
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "compny": {
+    "compnyCRM": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/compny",
+            "outputPath": "dist/compnyCRM",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "compny:build"
+            "browserTarget": "compnyCRM:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "compny:build:production"
+              "browserTarget": "compnyCRM:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "compny:build"
+            "browserTarget": "compnyCRM:build"
           }
         },
         "test": {
@@ -100,16 +100,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "compny:serve"
+            "devServerTarget": "compnyCRM:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "compny:serve:production"
+              "devServerTarget": "compnyCRM:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "compny"
+  "defaultProject": "compnyCRM"
 }

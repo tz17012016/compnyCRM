@@ -12,7 +12,6 @@ interface NavItem {
 })
 export class SideNavAdminComponent implements OnInit {
   navItems: NavItem[] = [
-    // Array<NavItem>
     {
       title: 'customers',
       link: '/admin',

@@ -26,9 +26,7 @@ export class CustomerEditComponent implements OnInit {
 
   onSub() {
     let id = this.route.snapshot.paramMap.get('id');
-    console.log(this.myForm.form);
     if (this.myForm.form.status == 'VALID') {
-      // console.log(this.myForm.form.value)
       let bodyForm = this.myForm.form.value;
       bodyForm.user_id = localStorage['fb_user'];
       this.dbFb.editCustomer(id, bodyForm);
@@ -44,13 +42,9 @@ export class CustomerEditComponent implements OnInit {
 
   getUserInfo(): void {
     this.getUserInfoObser().subscribe((ref: any) => {
-      console.log(ref);
       ref.map((item: any) => {
-        // item.key -> מכיל את שם הקיי/מאפיין
-        //  item.payload.val() -> מכיל את הערך
         this.user[item.key] = item.payload.val();
       });
-      console.log(this.user);
     });
   }
 }
