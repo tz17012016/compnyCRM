@@ -21,14 +21,14 @@ export class CustomersListComponent implements OnInit {
   }
 
   searchByFirstName(ev: any): void {
-    this.dbFb.filterArrayBy(ev.target.value, 'first');
+    this.dbFb.filterArrayBy(ev.target.value.toLowerCase(), 'first');
   }
 
   searchByLastName(ev: any): void {
-    this.dbFb.filterArrayBy(ev.target.value, 'last');
+    this.dbFb.filterArrayBy(ev.target.value.toLowerCase(), 'last');
   }
 
   searchByPhone(ev: any): void {
-    this.dbFb.filterArrayBy(ev.target.value, 'phone');
+    this.dbFb.filterArrayBy(ev.target.value.toLowerCase(), 'phone');
   }
 }
